@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="clockNumbers positionCenter"></div>
+    <div class="clock positionCenter" id="clock">
+        <div class="containerForHandDot positionCenter">
+            <div class="center positionCenter"></div>
+            <div class="hand hourHand positionCenter" id="hourHand"></div>
+            <div class="hand minuteHand positionCenter" id="minuteHand"></div>
+            <div class="hand secondHand positionCenter" id="secondHand"></div>   
+        </div>
+    </div>
+    <div class="digitalClock"></div> 
+
+    <div class="alarm">
+        <div>Set your ALARM</div>
+        <form action="#" class="alarmForm" onsubmit="setAlarm(event)">
+            <input type="text" placeholder="00" id="alarmHourValue">
+            <label for="hour">Hour</label>
+            <input type="text" placeholder="00" id="alarmMinuteValue">
+            <label for="minute">Minute</label> 
+            <select name="ampm" id="">
+                <option value="am">am</option>
+                <option value="pm">pm</option>
+            </select>
+            <button>OK</button>
+        </form>
+    </div>
+</body>
+<script src="alarm.js"></script>
+</html>
